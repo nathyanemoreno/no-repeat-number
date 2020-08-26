@@ -39,7 +39,8 @@ function App() {
         if (arr2.filter(n => n === last).length > 1 && last.match(/[6-9]|0/)) {
           setInputNumber(e.slice(0, -1))
         }
-        if (arr2.filter(n => n === last).length > 2) {
+        if (arr2.filter(n => n === last).length > 1 && e.slice(-2,-1)!=="1") {
+          console.log(1)
           setInputNumber(e.slice(0, -1))
         }
         if (arr2.filter(n => n === "1").length > 8) {
